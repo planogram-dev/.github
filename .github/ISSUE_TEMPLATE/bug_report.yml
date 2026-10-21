@@ -1,0 +1,43 @@
+name: Bug report
+description: Something does not work as it should.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Tell us what you saw and what you expected to see.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the game
+        2. Go to the second level
+        3. Jump on the moving block
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - PC (Steam)
+        - Web browser
+        - Website
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or build
+      placeholder: "1.0.3"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or logs
+      description: Drag files here. Remove personal data first.
